@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/poke_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollList"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/primary">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".app.PokemonViewer">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/poke_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView android:id="@+id/poke_name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:textSize="30sp"
+                android:text="@string/poke_name"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/poke_icon" />
+
+            <TextView android:id="@+id/tv_species"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/species"
+                android:textSize="20sp"
+                android:layout_below="@+id/poke_icon" />
+
+            <TextView android:id="@+id/tv_species_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_species"
+                android:layout_toEndOf="@+id/tv_species" />
+
+            <TextView android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/weight"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_species" />
+
+            <TextView android:id="@+id/tv_weight_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_weight"
+                android:layout_toEndOf="@+id/tv_weight" />
+
+            <TextView android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/height"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_weight" />
+
+            <TextView android:id="@+id/tv_height_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_height"
+                android:layout_toEndOf="@+id/tv_height" />
+
+            <TextView android:id="@+id/tv_forms"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/forms"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_height" />
+
+            <TextView android:id="@+id/tv_forms_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_forms"
+                android:layout_toEndOf="@+id/tv_forms" />
+
+            <TextView android:id="@+id/tv_abilities"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/abilities"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_forms" />
+
+            <TextView android:id="@+id/tv_abilities_val"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_abilities"
+                android:layout_toEndOf="@+id/tv_abilities" />
+
+            <TextView android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/speed"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_abilities" />
+
+            <TextView android:id="@+id/tv_speed_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_speed"
+                android:layout_toEndOf="@+id/tv_speed" />
+
+            <TextView android:id="@+id/tv_special_def"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/special_defense"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_speed" />
+
+            <TextView android:id="@+id/tv_special_def__val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_special_def"
+                android:layout_toEndOf="@+id/tv_special_def" />
+
+            <TextView android:id="@+id/tv_special_att"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/special_attack"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_special_def" />
+
+            <TextView android:id="@+id/tv_special_att_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_special_att"
+                android:layout_toEndOf="@+id/tv_special_att" />
+
+            <TextView android:id="@+id/tv_defense"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/defense"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_special_att" />
+
+            <TextView android:id="@+id/tv_defense__val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_defense"
+                android:layout_toEndOf="@+id/tv_defense" />
+
+            <TextView android:id="@+id/tv_attack"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/attack"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_defense" />
+
+            <TextView android:id="@+id/tv_attack_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_attack"
+                android:layout_toEndOf="@+id/tv_attack" />
+
+            <TextView android:id="@+id/tv_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:text="@string/hp"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_attack" />
+
+            <TextView android:id="@+id/tv_hp_val"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/primary"
+                android:textColor="@color/icons"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="New Text"
+                android:layout_alignTop="@+id/tv_hp"
+                android:layout_toEndOf="@+id/tv_hp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_fav_add_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:rippleColor="@color/accent"
+        app:layout_anchor="@id/scrollList"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

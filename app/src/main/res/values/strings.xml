@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="searchButton">Search</string>
+    <string name="search_hint">Search using name or id</string>
+    <string name="favorite_pokemons">Favorite Pokemons</string>
+    <string name="poke_name">Poke name</string>
+    <string name="species">Species:</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="forms">Forms:</string>
+    <string name="abilities">Abilities:</string>
+    <string name="speed">Speed:</string>
+    <string name="special_defense">Special defense:</string>
+    <string name="special_attack">Special attack:</string>
+    <string name="defense">Defense:</string>
+    <string name="attack">Attack:</string>
+    <string name="hp">Health points:</string>
+    <string name="added_to_fav">Added to favorites</string>
+    <string name="in_fav">It\'s in your pokeball already!</string>
+    <string name="removed_from_favs">Removed from Favorites!</string>
+</resources>
